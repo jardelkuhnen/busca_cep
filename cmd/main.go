@@ -22,7 +22,7 @@ func main() {
 	case resp := <-viaCep:
 		println("Response from viacep: ")
 		println(resp)
-	case <-time.After(1 * time.Minute):
+	case <-time.After(1 * time.Second):
 		println("Timeout")
 	}
 }
